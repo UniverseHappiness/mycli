@@ -1,0 +1,48 @@
+# Example configuration file for mycli
+
+general:
+  # Default agent to use
+  default_agent: default
+  
+  # Log level: DEBUG, INFO, WARN, ERROR
+  log_level: INFO
+  
+  # Data directory (optional, defaults to system-specific location)
+  # data_dir: /path/to/data
+
+ai_service:
+  # Default AI service provider: openai, local
+  default_provider: openai
+  
+  # Default model to use
+  default_model: gpt-3.5-turbo
+  
+  # API request timeout in seconds
+  timeout: 60
+  
+  # Maximum retry attempts
+  max_retries: 3
+  
+  # Note: API keys should be set via environment variables for security
+  # export MYCLI_OPENAI_API_KEY=your-api-key
+  # export MYCLI_OPENAI_BASE_URL=https://api.openai.com/v1  # optional
+
+cache:
+  # Enable response caching
+  enabled: true
+  
+  # Cache TTL in seconds
+  ttl: 3600
+  
+  # Maximum cache size in MB
+  max_size: 100
+
+repl:
+  # History size
+  history_size: 1000
+  
+  # Auto-save sessions
+  auto_save: true
+  
+  # Color theme
+  theme: default
